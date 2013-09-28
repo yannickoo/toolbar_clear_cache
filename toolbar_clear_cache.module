@@ -20,12 +20,15 @@ function toolbar_clear_cache_toolbar() {
       '#options' => array(
         'attributes' => array(
           'title' => t('Clear cache'),
-          'class' => array('toolbar-icon', 'toolbar-icon-cog'),
+          'class' => array('toolbar-icon', 'toolbar-icon-cog', 'toolbar-clear-cache'),
         ),
       ),
       '#attached' => array(
         'css' => array(
           drupal_get_path('module', 'toolbar_clear_cache') . '/css/toolbar-clear-cache.css',
+        ),
+        'js' => array(
+          drupal_get_path('module', 'toolbar_clear_cache') . '/js/toolbar-clear-cache.js',
         ),
       ),
     ),
