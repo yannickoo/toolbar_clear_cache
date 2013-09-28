@@ -1,0 +1,6 @@
+.toolbar-icon-cog:before {
+  background-image: url("../images/icons/cog.svg");
+}
+.no-svg .toolbar-icon-cog:before {
+  background-image: url("../images/icons/cog.png");
+}

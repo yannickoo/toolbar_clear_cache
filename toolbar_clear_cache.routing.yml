@@ -1,0 +1,7 @@
+toolbar_clear_cache.clear_cache:
+  path: '/admin/config/development/performance/clear-cache'
+  defaults:
+    _content: '\Drupal\toolbar_clear_cache\Controller\ToolbarClearCache::clearCache'
+    _title: 'Clear cache'
+  requirements:
+    _permission: 'access administration pages'

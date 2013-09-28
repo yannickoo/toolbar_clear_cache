@@ -1,0 +1,6 @@
+name: Toolbar Clear Cache
+description: 'This module just provides a new link to the toolbar which clears the cache.'
+core: 8.x
+type: module
+dependencies:
+  - toolbar

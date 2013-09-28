@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Main file of the Toolbar Clear Cache module.
+ */
+
+/**
+ * Implements hook_toolbar().
+ */
+function toolbar_clear_cache_toolbar() {
+  $items = array();
+
+  $items['clear_cache'] = array(
+    '#type' => 'toolbar_item',
+    'tab' => array(
+      '#type' => 'link',
+      '#title' => t('Clear cache'),
+      '#href' => 'admin/config/development/performance/clear-cache',
+      '#options' => array(
+        'attributes' => array(
+          'title' => t('Clear cache'),
+          'class' => array('toolbar-icon', 'toolbar-icon-cog'),
+        ),
+      ),
+      '#attached' => array(
+        'css' => array(
+          drupal_get_path('module', 'toolbar_clear_cache') . '/css/toolbar-clear-cache.css',
+        ),
+      ),
+    ),
+    '#weight' => 100,
+  );
+
+  return $items;
+}
