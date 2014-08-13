@@ -12,7 +12,7 @@ Drupal.behaviors.toolbarClearCache = {
     var $context = $(context);
 
     // Find all contextual links placeholders, if any.
-    var $toolbarClearCacheLinks = $context.find('.toolbar-clear-cache').once('toolbar-clear-cache');
+    var $toolbarClearCacheLinks = $('.toolbar-clear-cache', context).once('toolbar-clear-cache');
     if ($toolbarClearCacheLinks.length === 0) {
       return;
     }
